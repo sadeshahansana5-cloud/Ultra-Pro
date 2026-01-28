@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: ultra-pro-max-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: TMDB_API_KEY
+        sync: false
+      - key: ALLOWED_GROUP_ID
+        sync: false
+      - key: ADMIN_REQ_CHANNEL_ID
+        sync: false
+      - key: PORT
+        value: 10000
+      - key: APP_NAME
+        value: ultra-pro-max-bot
+      - key: DEBUG_MODE
+        value: "0"
