@@ -80,14 +80,14 @@ class BotConfig:
     allowed_group_id: int
     admin_req_channel_id: int
     log_channel_id: int
+
+    # APIs
+    tmdb_api_key: str
     
     # Database
     mongo_uri: str
     mongo_timeout: int = 10000
     mongo_retry_attempts: int = 3
-    
-    # APIs
-    tmdb_api_key: str
     
     # App Settings
     port: int = 10000
